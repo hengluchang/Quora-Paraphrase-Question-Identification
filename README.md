@@ -7,10 +7,32 @@ Identify question pairs that have the same intent using Quora dataset
 ## Results 
 0.89 testing accuracy 
 
+## Requirements
+- Python 3.5.2
+
+## Package dependencies
+- numpy 1.11.3
+- matplotlib 1.5.3
+- Keras 1.2.1
+- scikit-learn 0.18.1
+- h5py 2.6.0
+- hdf5 1.8.17
+
 ## How to run
 ```
 $ git clone https://github.com/hengluchang/SemQuestionMatching
 ```
+
+# Feature Fusion Network
+
+-
+- Download the required data
+-
+
+```
+pyhon3 train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
+```
+
 - create a folder named "dataset".
 ```
 $ cd SemQuestionMatching
