@@ -1,6 +1,9 @@
 ## Paraphrase Question Identification using Feature Fusion Network 
 Identify question pairs that have the same intent using Quora dataset
 
+## Model architecture
+![](https://github.com/hengluchang/SemQuestionMatching/blob/master/FFN_architecture.jpg)
+
 ## Results 
 0.89 testing accuracy 
 
@@ -16,7 +19,7 @@ $ mkdir -p dataset
 
 - Go to [Kaggle Quora Question Pairs website](https://www.kaggle.com/c/quora-question-pairs/data) and download train.csv.zip and test.csv.zip and unzip both. Place the train.csv and test.csv under /dataset directory.
 
-- Create 10 Hand crafted feature. This will create train_10features.csv and test_10features.csv under /dataset directory.
+- Create 10 Hand crafted features (HCFs). This will create train_10features.csv and test_10features.csv under /dataset directory.
 ```
 $ cd ..
 $ python feature_gen.py ../dataset/train.csv ../dataset/test.csv
