@@ -37,6 +37,13 @@ $ cd ..
 $ python feature_gen.py ../dataset/train.csv ../dataset/test.csv
 ```
 
+
+- Run Random Forest basline on these 10 HCFs, this will give you ~ 0.84 testing accuracy. 
+
+```
+$ python run_baseline.py ../dataset/train_10features.csv
+```
+
 # Feature Fusion Network
 
 - Download the required data to the file you clone
@@ -52,10 +59,5 @@ python3 train_HCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -f <
 
 
 
-- Run Random Forest basline on these 10 HCFs, this will give you ~ 0.84 testing accuracy. 
-
-```
-$ python run_baseline.py ../dataset/train_10features.csv
-```
 
 
