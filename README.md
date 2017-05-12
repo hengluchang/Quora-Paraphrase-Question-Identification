@@ -22,15 +22,6 @@ Identify question pairs that have the same intent using Quora dataset
 ```
 $ git clone https://github.com/hengluchang/SemQuestionMatching
 ```
-
-# Feature Fusion Network
-
--
-- Download the required data
--
-
-```
-pyhon3 train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
 ```
 
 - create a folder named "dataset".
@@ -46,6 +37,22 @@ $ mkdir -p dataset
 $ cd ..
 $ python feature_gen.py ../dataset/train.csv ../dataset/test.csv
 ```
+
+# Feature Fusion Network
+
+- Download the required data to the file you clone
+- Train 
+
+```
+pyhon3 train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
+```
+```
+python3 train_HCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -f <HCF_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
+```
+- Test
+```
+
+
 
 - Run Random Forest basline on these 10 HCFs, this will give you ~ 0.84 testing accuracy. 
 
