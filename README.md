@@ -22,7 +22,6 @@ Identify question pairs that have the same intent using Quora dataset
 ```
 $ git clone https://github.com/hengluchang/SemQuestionMatching
 ```
-```
 
 - create a folder named "dataset".
 ```
@@ -50,7 +49,6 @@ pyhon3 train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g 
 python3 train_HCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -f <HCF_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
 ```
 - Test
-```
 
 
 
