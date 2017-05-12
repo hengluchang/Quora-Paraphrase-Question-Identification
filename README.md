@@ -49,6 +49,7 @@ $ python run_baseline.py ../dataset/train_10features.csv
 - Download the required data to the directory you clone
 Google Drive link: ....
 - Train 
+
 FNN w/o HCF
 ```
 pyhon3 train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
@@ -64,6 +65,7 @@ For instance:
 python3 train_HCF.py -i train_rebalanced.csv -t test.csv -f train_rebalanced_10features.csv -g glove.840B.300d.txt -w question_pairs_weights_100epoch_test10_val20_dropout20_sumOP_noAVG_HCF_rebalanced.h5  -e word_embedding_matrix_trainANDtest_rebalanced.npy -n nb_words_trainANDtest_rebalanced.json
 
 - Test
+
 FNN w/o HCF
 ```
 test_noHCF.py -i <QUESTION_PAIRS_FILE> -o <RESULT_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE> -w <MODEL_WEIGHTS_FILE>
