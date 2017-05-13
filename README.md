@@ -1,11 +1,11 @@
 ## Paraphrase Question Identification using Feature Fusion Network 
-Identify question pairs that have the same meaning using 
+Identify question pairs that have the same meaning  
 
 ## Model architecture
 ![](https://github.com/hengluchang/SemQuestionMatching/blob/master/FFN_architecture.jpg)
 
 ## Results 
-- 0.89 testing accuracy (train for 100 epochs) 
+- 0.89 testing accuracy for FFN (train for 100 epochs) 
 
 ## Requirements
 - Python 3.5 for running FFN
@@ -91,6 +91,8 @@ For instance:
 $ python3 test_sum_HCF.py -i test.csv -f -test_10features.csv -o result_question_pairs_weights_100epoch_test10_val10_dropout20_sumOP_noAVG_HCF_rebalanced.csv -e word_embedding_matrix_trainANDtest_rebalanced.npy -n nb_words_trainANDtest_rebalanced.json -w question_pairs_weights_100epoch_test10_val10_dropout20_sumOP_noAVG_HCF_rebalanced.h5
 ```
 
+## Reference
+- [Keras model to identify Quora question pairs](https://github.com/bradleypallen/keras-quora-question-pairs): borrowed most of the Deep Neural Network model
 
 
 
