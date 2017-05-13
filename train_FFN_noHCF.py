@@ -90,12 +90,12 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"hi:t:g:w:e:n:",["ifile=", "tfile= ", "gfile=","wfile=", "embeddingfile", "nbfile"])
     except getopt.GetoptError: 
-        print ('train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>')
+        print ('train_FFN_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>')
         sys.exit(2)
         
     for opt, arg in opts:
         if opt == '-h':
-            print ('train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>')
+            print ('train_FFN_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             QUESTION_PAIRS_FILE = arg
