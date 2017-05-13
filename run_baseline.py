@@ -69,7 +69,7 @@ def main(train_data_with10features_path):
     print 'Testing log loss = {}'.format(test_log_loss_score)
     RF_preds_test[RF_preds_test > 0.5] = 1
     RF_preds_test[RF_preds_test <= 0.5] = 0
-    accuracy = accuracy_score(y_val, RF_preds_test)
+    accuracy = accuracy_score(y_test, RF_preds_test)
     print 'Testing accuracy = {}\n'.format(accuracy)
 
 
