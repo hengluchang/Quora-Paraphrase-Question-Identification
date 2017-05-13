@@ -92,7 +92,7 @@ $ python3 test_sum_HCF.py -i test.csv -f -test_10features.csv -o result_question
 ```
 
 ## Reference
-- [Keras model to identify Quora question pairs](https://github.com/bradleypallen/keras-quora-question-pairs): borrowed most of the Deep Neural Network model
+- [Keras model to identify Quora question pairs](https://github.com/bradleypallen/keras-quora-question-pairs): borrowed most of the Deep Neural Network script
 
 
 
