@@ -57,7 +57,7 @@ For instance:
 $ python3 train_noHCF.py -i train_rebalanced.csv -t test.csv -g glove.840B.300d.txt -w question_pairs_weights_100epoch_test10_val10_dropout20_sumOP_noAVG_rebalanced.h5  -e word_embedding_matrix_trainANDtest_rebalanced.npy -n nb_words_trainANDtest_rebalanced.json
 ```
 
-- Train FFN w/ HCF
+- Train FFN
 ```
 $ python3 train_HCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -f <HCF_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
 ```
@@ -74,7 +74,7 @@ For instance:
 ```
 $ python3 test_noHCF.py -i test.csv  -o result_question_pairs_weights_100epoch_test10_val10_dropout20_sumOP_noAVG_rebalanced.csv -e word_embedding_matrix_trainANDtest_rebalanced.npy -n nb_words_trainANDtest_rebalanced.json -w question_pairs_weights_100epoch_test10_val10_dropout20_sumOP_noAVG_rebalanced.h5 
 ```
-- Test FFN w/ HCF
+- Test FFN
 
 ```
 $ python3 test_HCF.py -i <QUESTION_PAIRS_FILE> -o <RESULT_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE> -w <MODEL_WEIGHTS_FILE>
