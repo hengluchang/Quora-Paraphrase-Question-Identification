@@ -12,12 +12,12 @@ Identify question pairs that have the same meaning
 - Python 2.7 for running Random Forest (RF) baseline 
 
 ## Package dependencies
-# RF baseline
+### RF baseline
 - scikit-learn 0.18
 - nltk
 - pandas 
 
-# FFN
+### FFN
 - numpy 1.11
 - matplotlib 1.5
 - Keras 1.2
