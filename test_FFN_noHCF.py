@@ -72,12 +72,12 @@ def main(argv):
 	try:
 	    opts, args = getopt.getopt(argv,"hi:o:e:n:w:",["ifile=", "ofile=", "embeddingfile", "nbfile", "weightFile"])
 	except getopt.GetoptError: 
-		print ('test_noHCF.py -i <QUESTION_PAIRS_FILE> -o <RESULT_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE> -w <MODEL_WEIGHTS_FILE>')
+		print ('test_FFN_noHCF.py -i <QUESTION_PAIRS_FILE> -o <RESULT_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE> -w <MODEL_WEIGHTS_FILE>')
 		sys.exit(2)
 	    
 	for opt, arg in opts:
 		if opt == '-h':
-			print ('test_noHCF.py -i <QUESTION_PAIRS_FILE> -o <RESULT_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE> -w <MODEL_WEIGHTS_FILE>')
+			print ('test_FFN_noHCF.py -i <QUESTION_PAIRS_FILE> -o <RESULT_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE> -w <MODEL_WEIGHTS_FILE>')
 			sys.exit()
 		elif opt in ("-i", "--ifile"):
 			QUESTION_PAIRS_FILE = arg
