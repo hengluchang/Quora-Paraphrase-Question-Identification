@@ -53,7 +53,7 @@ $ python run_baseline.py ../dataset/train_10features.csv
 
 ### Run Feature Fusion Network (FFN)
 
-- Download the required data [here(Google Drive link)](https://drive.google.com/drive/folders/0B7j2V-uXleQ-ZjhxS0laWFBBTVk?usp=sharing)to the directory you clone
+- Download the required data [here(Google Drive link)](https://drive.google.com/drive/folders/0B7j2V-uXleQ-ZjhxS0laWFBBTVk?usp=sharing) to the directory you clone
 
 - Train FFN w/o HCF
 ```
