@@ -45,7 +45,7 @@ $ cd ..
 $ python feature_gen.py ../dataset/train.csv ../dataset/test.csv
 ```
 
-- Run Random Forest basline on these 10 HCFs, this will give you ~ 0.84 testing accuracy. 
+- Run Random Forest baseline on these 10 HCFs, this will give you ~ 0.84 testing accuracy. 
 
 ```
 $ python run_baseline.py ../dataset/train_10features.csv
