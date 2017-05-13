@@ -1,5 +1,5 @@
 ## Paraphrase Question Identification using Feature Fusion Network 
-Identify question pairs that have the same intent using Quora dataset
+Identify question pairs that have the same meaning using 
 
 ## Model architecture
 ![](https://github.com/hengluchang/SemQuestionMatching/blob/master/FFN_architecture.jpg)
@@ -9,9 +9,15 @@ Identify question pairs that have the same intent using Quora dataset
 
 ## Requirements
 - Python 3.5 for running FFN
-- Python 2.7 for running Random Forest baseline 
+- Python 2.7 for running Random Forest (RF) baseline 
 
 ## Package dependencies
+# RF baseline
+- scikit-learn 0.18
+- nltk
+- pandas 
+
+# FFN
 - numpy 1.11
 - matplotlib 1.5
 - Keras 1.2
@@ -19,15 +25,12 @@ Identify question pairs that have the same intent using Quora dataset
 - h5py 2.6
 - hdf5 1.8
 - Thesorflow 0.10
-- nltk
-- pandas 
 
 ## How to run
-### Random Forest baseline 
 ```
 $ git clone https://github.com/hengluchang/SemQuestionMatching
 ```
-
+### Run Random Forest baseline 
 - create a folder named "dataset".
 ```
 $ cd SemQuestionMatching
@@ -42,17 +45,16 @@ $ cd ..
 $ python feature_gen.py ../dataset/train.csv ../dataset/test.csv
 ```
 
-
 - Run Random Forest basline on these 10 HCFs, this will give you ~ 0.84 testing accuracy. 
 
 ```
 $ python run_baseline.py ../dataset/train_10features.csv
 ```
 
-### Feature Fusion Network (FFN)
+### Run Feature Fusion Network (FFN)
 
-- Download the required data to the directory you clone
-Google Drive link: ....
+- Download the required data [here(Google Drive link)](https://drive.google.com/drive/folders/0B7j2V-uXleQ-ZjhxS0laWFBBTVk?usp=sharing)to the directory you clone
+
 - Train FFN w/o HCF
 ```
 $ pyhon3 train_noHCF.py -i <QUESTION_PAIRS_FILE> -t <TEST_QUESTION_PAIRS_FILE> -g <GLOVE_FILE> -w <MODEL_WEIGHTS_FILE> -e <WORD_EMBEDDING_MATRIX_FILE> -n <NB_WORDS_DATA_FILE>
