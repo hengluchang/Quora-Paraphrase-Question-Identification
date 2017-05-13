@@ -5,7 +5,7 @@ Identify question pairs that have the same intent using Quora dataset
 ![](https://github.com/hengluchang/SemQuestionMatching/blob/master/FFN_architecture.jpg)
 
 ## Results 
-0.89 testing accuracy 
+0.89 testing accuracy from training for 100 epochs
 
 ## Requirements
 - Python 3.5.2
