@@ -14,16 +14,17 @@ def save_results(predictions,IDs,  filename):
             f.write("%d,%f\n" % (IDs[i], pred))
 
 
-"""Very basic tokenizer: split the sentence by space into a list of tokens."""
 def tokenizer(sentence):
+    """Very basic tokenizer: split the sentence by space into a list of tokens."""
     words = []
     for space_separated_fragment in sentence.strip().split():
       words.extend(re.split(_WORD_SPLIT, space_separated_fragment))
     return [w for w in words if w]
 
 
-"""Character ngram tokenizer: split the sentence into a list of char ngram tokens."""
+
 def char_ngram_tokenizer(sentence, n):
+    """Character ngram tokenizer: split the sentence into a list of char ngram tokens."""
     return [sentence[i:i+n] for i in range(len(sentence)-n+1)]
 
 
