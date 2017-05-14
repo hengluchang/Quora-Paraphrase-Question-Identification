@@ -26,7 +26,7 @@ Identify question pairs that have the same meaning
 - scikit-learn 0.18
 - h5py 2.6
 - hdf5 1.8
-- Thesorflow 0.10
+- TensorFlow 0.10
 
 ## How to run
 ```
