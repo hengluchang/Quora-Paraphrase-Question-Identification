@@ -7,7 +7,7 @@ BI_BLEU_WEIGHTS = (0, 1, 0, 0)
 BLEU2_WEIGHTS = (0.5, 0.5, 0, 0)
 
 
-def save_results(predictions,IDs,  filename):
+def save_results(predictions, IDs, filename):
     with open(filename, 'w') as f:
         f.write("test_id,is_duplicate\n")
         for i, pred in enumerate(predictions):
