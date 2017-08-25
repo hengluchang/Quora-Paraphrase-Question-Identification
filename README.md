@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/086fe025b4fb41599ee1e6dfa50f12bf)](https://www.codacy.com/app/hengluchang/Quora-Paraphrase-Question-Identification?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hengluchang/Quora-Paraphrase-Question-Identification&amp;utm_campaign=Badge_Grade)
+
 ## Paraphrase Question Identification using Feature Fusion Network 
 Identify question pairs that have the same meaning  
 
@@ -24,7 +26,7 @@ Identify question pairs that have the same meaning
 - scikit-learn 0.18
 - h5py 2.6
 - hdf5 1.8
-- Thesorflow 0.10
+- TensorFlow 0.10
 
 ## How to run
 ```
