@@ -3,7 +3,7 @@
 ## Paraphrase Question Identification using Feature Fusion Network 
 Identify question pairs that have the same meaning. Feature Fusion Network takes advantage of learning rich features not just from sentence representations but also from hand craft features.  
 
-For more detail, please see our project research paper [Paraphrase Question Identification using Feature Fustion Network](https://github.com/hengluchang/Quora-Paraphrase-Question-Identification/blob/master/paraphrase-question-identification.pdf)
+For more detail information, please see our project research paper: [Paraphrase Question Identification using Feature Fusion Network](https://github.com/hengluchang/Quora-Paraphrase-Question-Identification/blob/master/paraphrase-question-identification.pdf)
 
 ## Model architecture
 ![](https://github.com/hengluchang/SemQuestionMatching/blob/master/FFN_architecture.jpg)
