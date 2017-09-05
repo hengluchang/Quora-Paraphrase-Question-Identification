@@ -32,12 +32,12 @@ For more detailed information, please see our project research paper: [Paraphras
 
 ## How to run
 ```
-$ git clone https://github.com/hengluchang/SemQuestionMatching
+$ git clone https://github.com/hengluchang/Quora-Paraphrase-Question-Identification
 ```
 ### Run Random Forest baseline 
 - create a folder named "dataset".
 ```
-$ cd SemQuestionMatching
+$ cd Quora-Paraphrase-Question-Identification
 $ mkdir -p dataset
 ```
 
